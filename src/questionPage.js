@@ -24,9 +24,9 @@ const QuestionPage = () =>{
       setWronganswers([...wronganswers,...wrong])
       setRightanswers([...rightanswers,...right])
     }else{
-        setAnswers(answers.filter(res=>res != answers))
-        setWronganswers(wronganswers.filter(res=>res != answers))
-      setRightanswers(rightanswers.filter(res=>res != answers))
+        setAnswers(answers.filter(res=>res !== answers))
+        setWronganswers(wronganswers.filter(res=>res !== answers))
+      setRightanswers(rightanswers.filter(res=>res !== answers))
     }
     console.log(answers)
     console.log(wronganswers)
